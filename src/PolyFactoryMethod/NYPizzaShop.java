@@ -1,7 +1,16 @@
 package PolyFactoryMethod;
 
 
-
+/**
+ * 
+ * 纽约加盟Pizza店
+ * 
+ * 具体的工厂(可以创建多个）
+ * 重写Override 工厂方法 createPizza（）.
+ * 
+ * @author AllenLee
+ *
+ */
 public class NYPizzaShop extends AbstractPizzaShop {
 
 	@Override
@@ -36,3 +45,6 @@ public class NYPizzaShop extends AbstractPizzaShop {
 	}
 
 }
+
+
+

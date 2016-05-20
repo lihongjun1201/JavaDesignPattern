@@ -8,6 +8,8 @@ public class TestDemo {
 		AbstractPizzaShop pizzaShop = new NYPizzaShop();
 		AbstractPizza pizza = pizzaShop.orderPizza("NYVeggie");
 		
+		pizzaShop = new LAPizzaShop();
+		pizza = pizzaShop.orderPizza("LACheese");
 		
 	}
 
