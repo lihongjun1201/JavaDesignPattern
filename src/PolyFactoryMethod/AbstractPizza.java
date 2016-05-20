@@ -2,6 +2,14 @@ package PolyFactoryMethod;
 
 import simplefactory.Pizza;
 
+
+/**
+ * 抽象的产品基类
+ * 
+ * 可以派生出许多不同的具体产品类
+ * @author AllenLee
+ *
+ */
 public abstract class AbstractPizza {
 
 	public void prepare() {
