@@ -1,4 +1,4 @@
-package observerpattern;
+package decoratepattern;
 
 public abstract class Beverage {
 

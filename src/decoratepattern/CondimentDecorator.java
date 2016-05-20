@@ -1,4 +1,4 @@
-package observerpattern;
+package decoratepattern;
 
 /**
  * 调料装饰器类

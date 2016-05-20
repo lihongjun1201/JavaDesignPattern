@@ -1,22 +1,23 @@
-package observerpattern;
+package decoratepattern;
 
 /**
- * 深度烘焙咖啡
+ * 混合咖啡
  * 
  * @author AllenLee
  *
  */
-public class DarkRoastCoffee extends Beverage {
+public class HouseBlendCoffee extends Beverage {
 
 	@Override
 	public float cost() {
 		// TODO Auto-generated method stub
-		return 16.6f;
+		return 12.5f;
 	}
-
+	
 	@Override
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return "烘焙咖啡，味道醇厚！(16.6 元）";
+		return "混合咖啡！混合不同的美味！(12.5 元）";
 	}
+
 }

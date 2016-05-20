@@ -1,23 +1,22 @@
-package observerpattern;
+package decoratepattern;
 
 /**
- * 混合咖啡
- * 
+ * 去咖啡因咖啡
  * @author AllenLee
  *
  */
-public class HouseBlendCoffee extends Beverage {
+public class DecafCoffee extends Beverage {
 
 	@Override
 	public float cost() {
 		// TODO Auto-generated method stub
-		return 12.5f;
+		return 14.4f;
 	}
-	
+
 	@Override
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return "混合咖啡！混合不同的美味！(12.5 元）";
+		return "无咖啡因咖啡，味道更特别!(14.4 元）";
 	}
-
+	
 }

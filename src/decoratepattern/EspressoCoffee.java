@@ -1,4 +1,4 @@
-package observerpattern;
+package decoratepattern;
 
 /**
  * Å¨Ëõ¿§·È

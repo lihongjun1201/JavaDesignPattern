@@ -1,4 +1,4 @@
-package observerpattern;
+package decoratepattern;
 
 public class AllenCafeTest {
 
