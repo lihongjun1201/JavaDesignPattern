@@ -1,5 +1,15 @@
-package PolyFactoryMethod;
+package factorymethodpattern;
 
+
+/**
+ * 洛杉矶加盟PIZZA店
+ * 
+ * 具体的工厂(可以创建多个）
+ * 重写Override 工厂方法 createPizza（）.
+ * 
+ * @author AllenLee
+ *
+ */
 public class LAPizzaShop extends AbstractPizzaShop {
 
 	@Override

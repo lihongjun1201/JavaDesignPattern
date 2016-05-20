@@ -1,4 +1,4 @@
-package PolyFactoryMethod;
+package factorymethodpattern;
 
 import simplefactory.Pizza;
 
