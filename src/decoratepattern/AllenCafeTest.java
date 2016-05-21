@@ -1,5 +1,7 @@
 package decoratepattern;
 
+import com.sun.jndi.url.dns.dnsURLContext;
+
 public class AllenCafeTest {
 
 	public static void main(String[] args) {
@@ -9,6 +11,10 @@ public class AllenCafeTest {
 		System.out.println("顾客1 点的咖啡 ： " + customCoffee1.getDescription());
 		System.out.println("顾客点的咖啡价格 ： " + customCoffee1.cost() + "\n");
 	
+	
+		
+	
+		
 		//浓缩咖啡 + 双份摩卡 + 奶泡
 		Beverage customCoffee2 = new Mocha(new Mocha(new Soy(new EspressoCoffee())));
 		System.out.println("顾客2 点的咖啡 ： " + customCoffee2.getDescription());
