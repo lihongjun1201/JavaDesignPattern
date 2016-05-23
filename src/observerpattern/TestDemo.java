@@ -15,11 +15,11 @@ public class TestDemo {
 		currentBord.lookSubject(weatherStation);
 		forecastBord.lookSubject(weatherStation);
 		
-		//主题变化
+		//只要主题发生了变化，就会自动通知所有观察者
 		weatherStation.changeContent(30,80,true);
+//		weatherStation.setChanged();
 		
-		//通知所有观察者
-		weatherStation.notifyObservers();
+
 		
 		System.out.println("**********************************\n");
 		//观察者取消主题
@@ -27,7 +27,7 @@ public class TestDemo {
 		forecastBord.unlookSubject(weatherStation);
 		
 		weatherStation.changeContent(16,40,false);
-		weatherStation.notifyObservers();
+//		weatherStation.setChanged();
 		
 	}
 

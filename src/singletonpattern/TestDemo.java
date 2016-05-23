@@ -1,6 +1,5 @@
-package test;
+package singletonpattern;
 
-import singletonpattern.SingletonLazyLoad;
 
 public class TestDemo {
 

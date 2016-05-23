@@ -3,17 +3,13 @@ package observerpattern;
 import java.util.ArrayList;
 import java.util.List;
 
-
-
 public class WeatherStation implements Subject {
-	
+
 	WeatherData weatherData;
-	
+
 	boolean isDataChanged = false;
-	
+
 	List<Observer> diffBoards;
-	
-	
 
 	public WeatherStation(WeatherData data) {
 		super();
@@ -36,26 +32,30 @@ public class WeatherStation implements Subject {
 	@Override
 	public void notifyObservers() {
 		// TODO Auto-generated method stub
-		
+
 		if (isDataChanged == true) {
 			for (Observer observer : diffBoards) {
 				observer.update(weatherData);
 			}
-			
-			isDataChanged = !isDataChanged;
+
+			isDataChanged = false;
 		}
-		
+
 	}
 
-	public void changeContent(int wd,int sd,boolean hasRain) {
+	public void changeContent(int wd, int sd, boolean hasRain) {
 		weatherData.setWendu(wd);
 		weatherData.setShidu(sd);
 		weatherData.setHasRain(hasRain);
-		
-		isDataChanged = !isDataChanged;
+
+		setChanged();
+		notifyObservers();
 	}
-	
-	
+
+	public void setChanged() {
+		isDataChanged = true;
+	}
+
 	public List<Observer> getDiffBoards() {
 		return diffBoards;
 	}
@@ -63,8 +63,5 @@ public class WeatherStation implements Subject {
 	public void setDiffBoards(List<Observer> diffBoards) {
 		this.diffBoards = diffBoards;
 	}
-	
+
 }
-
-
-
